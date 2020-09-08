@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计页面</title>
+</head>
+<body>
+    <h1>字数统计结果: {{ num }}</h1>
+    <h2>文本内容为: </h2>
+    <h4>{{ text }}</h4>
+    <h2>文本字符统计: </h2>
+    {% for k,v in sort_word %}
+        <h5>{{ k}}  - {{ v }}</h5>
+    {% endfor%}}
+</body>
+</html>
